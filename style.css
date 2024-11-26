@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #2c0c0c; /* Matches the dark red-brown background */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    color:#fff;
+}
+
+/* Header Section */
+.hr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #360100;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.hr-profile h5 {
+    color:#fff;
+    margin: 0;
+    font-size: 13.6px;
+    font: Inter;
+}
+
+.hr-btn a {
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 14;
+    font: Open Sans; 
+}
+
+.hr-btn a:hover {
+    background-color: #360100;
+}
+
+/* Home Section */
+.first {
+    background-image: url('/pics/sun.jpg') no-repeat center center/cover;
+    height: 100vh;
+    weight: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    color:#fff;
+}
+
+.home-ne {
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    
+}
+.home-ne h1 {
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+    font: Inter;
+}
+
+.home-ne h4 {
+    font-size: 15px;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px #000;
+    font: Inter;
+    font-weight: bold;
+}
+
+/* About Section */
+.second {
+    background-color: #360100;
+    padding: 50px 20px;
+    color: #fff;
+    text-align: left;
+    height: 100vh;
+    weight: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    color:#fff;
+}
+
+.about1-ct {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.about1-pic1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    left:0;
+}
+.about1-pic2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    left:0;
+}
+
+.about1-te h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color:#fff;
+    display: inline-block;
+    padding: 5px 10px;
+    color:#360100;
+    border-radius: 5px;
+    top:0;
+    right:0;
+    Font: Inter;
+}
+
+.about1-te p {
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 1.8;
+    font:Inter;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hr {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hr-btn {
+        margin-top: 10px;
+    }
+
+    .about1-ct {
+        grid-template-columns: 1fr;
+    }
+
+    .about1-pic1, .about1-pic2 {
+        text-align: center;
+    }
+
+    .about1-te, .about1-dp {
+        text-align: center;
+    }
+}
